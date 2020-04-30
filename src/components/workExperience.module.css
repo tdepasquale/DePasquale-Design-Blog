@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito|Pacifico|Satisfy&display=swap");
+
+section {
+  box-sizing: border-box;
+  font-family: "Nunito";
+  overflow-x: hidden;
+}
+
+a {
+  box-shadow: none;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 3rem;
+  padding: 50px 2rem 50px 2rem;
+}
+
+.section {
+  background-color: hsl(50, 100%, 93%);
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  padding: 0 2rem 0 2rem;
+  color: hsl(124, 30%, 50%);
+}
+
+.block {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4rem;
+}
+
+.thirds {
+  width: 33.3vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.workOne {
+  width: 400px;
+  height: 340px;
+  background: url("https://depasquale-design.s3.us-east-2.amazonaws.com/rad-xrays-website.png")
+    center center/cover;
+}
+
+.workTwo {
+  width: 400px;
+  height: 340px;
+  background: url("https://depasquale-design.s3.us-east-2.amazonaws.com/quick-game-guides-website.png")
+    center center/cover;
+}
+
+.workThree {
+  width: 400px;
+  height: 340px;
+  background: url("https://depasquale-design.s3.us-east-2.amazonaws.com/wedding-website.png")
+    center center/cover;
+}
+
+@media only screen and (max-width: 1400px) {
+  .block {
+    flex-direction: column;
+  }
+
+  .thirds {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .workOne,
+  .workTwo,
+  .workThree {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .title {
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 4rem;
+    padding-bottom: 1rem;
+  }
+
+  .subtitle {
+    line-height: 2rem;
+    padding-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .workOne,
+  .workTwo,
+  .workThree {
+    height: 250px;
+  }
+}

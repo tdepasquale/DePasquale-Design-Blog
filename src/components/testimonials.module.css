@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito|Pacifico|Satisfy&display=swap");
+
+section {
+  box-sizing: border-box;
+  font-family: "Nunito";
+  overflow-x: hidden;
+}
+
+.section {
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 3rem;
+  padding: 50px 2rem 50px 2rem;
+}
+
+.block {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4rem;
+}
+
+.thirds {
+  width: 33.3vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.person {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 6px solid #7cbb80;
+}
+
+.chris {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 6px solid #7cbb80;
+  background: url("https://depasquale-design.s3.us-east-2.amazonaws.com/chris.jpg")
+    center center/cover;
+}
+
+.brenna {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 6px solid #7cbb80;
+  background: url("https://depasquale-design.s3.us-east-2.amazonaws.com/brenna.jpg")
+    center center/cover;
+}
+
+.liz {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 6px solid #7cbb80;
+  background: url("https://depasquale-design.s3.us-east-2.amazonaws.com/liz.jpg")
+    center center/cover;
+}
+
+.quote {
+  align-self: center;
+  font-size: 1.5rem;
+  margin: auto 1rem auto 1rem;
+}
+
+.signature {
+  font-family: "Satisfy", cursive;
+}
+
+@media only screen and (max-width: 1400px) {
+  .block {
+    flex-direction: column;
+  }
+
+  .thirds {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

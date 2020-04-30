@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito|Pacifico|Satisfy&display=swap");
+
+section {
+  box-sizing: border-box;
+  font-family: "Nunito";
+  overflow-x: hidden;
+}
+
+.sectionLeft,
+.sectionRight {
+  min-height: 105vh;
+  width: 50vw;
+}
+
+.sectionLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-weight: 900;
+  font-size: 3rem;
+  font-family: "Nunito";
+  overflow-y: hidden;
+  padding-bottom: 55px;
+}
+
+.container {
+  display: flex;
+  background: url("https://depasquale-design.s3.us-east-2.amazonaws.com/tom-wide.png")
+    center center/cover;
+  min-height: 100vh;
+  max-width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.green {
+  color: hsl(124, 30%, 50%);
+}
+
+.purple {
+  color: #e05eca;
+}
+
+.text {
+  font-size: 1.6rem;
+}
+
+i {
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 1400px) {
+  .container {
+    background: none;
+  }
+
+  .sectionLeft {
+    width: 100vw;
+  }
+
+  .sectionRight {
+    width: 0vw;
+  }
+
+  .sectionLeft > .text:last-child {
+    margin-bottom: 5rem;
+  }
+
+  .sectionTitle {
+    margin-bottom: 1rem;
+  }
+
+  .text {
+    font-size: 1.5rem;
+  }
+
+  p:last-child {
+    margin-bottom: 3.5rem;
+  }
+}

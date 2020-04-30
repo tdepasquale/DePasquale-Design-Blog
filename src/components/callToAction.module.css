@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito|Pacifico|Satisfy&display=swap");
+
+section {
+  box-sizing: border-box;
+  font-family: "Nunito";
+  overflow-x: hidden;
+}
+
+.title {
+  color: hsl(124, 30%, 50%);
+  font-size: 3rem;
+  text-align: center;
+  line-height: 3.3rem;
+  font-family: "Pacifico", cursive;
+  margin-top: 12vh;
+  padding-bottom: 1rem;
+}
+
+h1 {
+  width: 100%;
+  margin: 0;
+}
+
+.container {
+  max-width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  min-height: 85vh;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.section:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: hsl(50, 100%, 93%);
+  transform: skewY(25deg);
+  z-index: -1;
+}
+
+.ctaText {
+  text-align: center;
+  font-weight: 900;
+  font-size: 5rem;
+  margin-top: 6vh;
+  overflow-y: hidden;
+}
+
+.ctaSubtext {
+  text-align: center;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 1400px) {
+  .ctaText {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  .ctaSubtext {
+    max-width: 90%;
+  }
+
+  .title {
+    font-size: 2rem;
+    line-height: 2.3rem;
+  }
+
+  .section:after {
+    transform: skewY(55deg);
+  }
+}
